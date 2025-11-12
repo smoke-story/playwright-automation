@@ -18,8 +18,8 @@ WORKDIR /usr/workspace
 
 COPY ./requirements.txt /usr/workspace
 
-RUN pip install --no-cache-dir -r requirements.txt
-    # && playwright install --only-shell
+RUN pip install --no-cache-dir -r requirements.txt \
+    && playwright install --with-deps --only-shell
 
 # Second stage
 FROM python:3.10.19-slim-bookworm AS main
