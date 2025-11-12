@@ -2,7 +2,6 @@
 FROM python:3.10.19-slim-bookworm AS builder
 
 ENV PYTHONUNBUFFERED=1
-
 ENV ALLURE_VERSION=2.35.0
 
 RUN apt-get update \
