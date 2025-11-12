@@ -26,8 +26,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 FROM python:3.10.19-slim-bookworm AS main
 
 ENV PYTHONUNBUFFERED=1
-
 ENV ALLURE_VERSION=2.35.0
+ENV JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
 COPY --from=builder /usr/local/bin/* /usr/local/bin
 
