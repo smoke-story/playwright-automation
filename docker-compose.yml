@@ -12,7 +12,7 @@ services:
     volumes:
       - ./:/usr/workspace
     
-    command: ["/bin/sh", "-c", "ls -la && pytest --alluredir=../allure-results"]
+    command: ["/bin/sh", "-c", "ls -la && pytest --alluredir=allure-results"]
   
     working_dir: /usr/workspace
 
