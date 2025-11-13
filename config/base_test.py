@@ -3,7 +3,7 @@ from pages.login_page import LoginPage
 from pages.dashboard_page import DashboardPage
 from pages.account_info_page import AccountInfoPage
 from pages.register_page import RegisterPage
-from data import Data
+from .data import Data
 import pytest
 
 
