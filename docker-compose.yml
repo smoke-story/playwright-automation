@@ -17,5 +17,6 @@ services:
     working_dir: /usr/workspace
 
     environment:
+      - PYTHONPATH=/usr/workspace:${PYTHONPATH}
       - LOGIN=${LOGIN}
       - PASSWORD=${PASSWORD}
